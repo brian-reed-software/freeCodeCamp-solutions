@@ -1,0 +1,20 @@
+/*function isLess(a, b) {
+  // Only change code below this line
+  switch (true){
+    case a < b:
+    answer = true
+    break;
+    case a > b:
+    answer = false
+    break;
+  }
+  }
+*/
+  function isLess(a, b) {
+  // Fix this code
+  return a <= b;
+}
+
+  // Only change code above this line
+
+console.log(isLess(15, 10))
