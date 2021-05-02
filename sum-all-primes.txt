@@ -1,0 +1,22 @@
+
+function sumPrimes(num){
+
+var myArr = []
+function seeIfPrime(n){
+for (var i = 0; i <= num; i++){
+if ((n % i === 0) && (i !== n) && (i !== 1)){
+return n
+//myArr.push(i)
+}}
+return myArr.push(n)
+}
+
+for (var n = 0; n <= num; n++){seeIfPrime(n)}
+const sum = myArr.reduce(add,-1)
+function add(accumulator, a) {
+    return accumulator + a;
+}
+return (sum)
+}
+
+sumPrimes(977)
