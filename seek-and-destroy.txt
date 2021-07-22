@@ -1,0 +1,52 @@
+function destroyer(arr) {
+
+
+/*
+var args = []
+
+for (var i in arguments)
+{
+  if (arguments.hasOwnProperty(i)){
+    args.push(i)
+  }
+}
+*/
+
+//let args = 
+//console.log(arguments)
+let args = Array.from(arguments).sort(function (a, b) { return a - b; })
+for (var j = 1; j < arguments.length + 1; j++){ 
+  //var args = []
+  
+  args.concat(arguments[j])
+  delete args[0]
+}
+
+
+  for (var i = 0 ; i < arr.length; i++){
+   //console.log(arr[i])
+    //
+arr.concat(arr[i])
+    //console.log(arguments[i])
+    //var newArr = []
+    
+//console.log(arr.concat(arr[i]))
+    //let args = Object.keys(arguments[i])
+  /*  let newArr = []
+   for (var i in arguments)
+{
+  if (arguments.hasOwnProperty(i)){
+    newArr.push(arguments[i])
+  }
+} 
+*/
+
+    //newArr.push(args)
+    
+  var difference = arr.filter(x => args.indexOf(x) === -1)
+}
+
+
+//console.log(args)
+return difference
+}
